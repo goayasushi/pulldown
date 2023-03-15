@@ -1,0 +1,8 @@
+<%= link_to '商品登録', new_item_path, method: :GET %>
+
+<div class="contents row">
+  <% @items.each do |item| %>
+      <p><%= item.product %></p>
+      <p><%= item.client.name %></p>
+  <% end %>
+</div>
